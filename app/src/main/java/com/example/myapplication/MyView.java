@@ -41,5 +41,27 @@ public class MyView extends View {
         canvas.drawLine(200, 200, 600, 500, pen);
         canvas.drawLine(200, 150, 600, 100, pen);
         canvas.drawLine(200, 200, 300, 600, pen);
+        pen.setColor(Color.parseColor("#8B6D5C"));
+        canvas.drawRect(20, 2000, getWidth() / 2, 1500, pen);
+        pen.setColor(Color.parseColor("#9F8170"));
+        Path path = new Path();
+        path.moveTo(20, 1500);
+        path.lineTo(getWidth() / 4 + 20, 1000);
+        path.lineTo(getWidth() / 2, 1500);
+        pen.setStyle(Paint.Style.FILL);
+        canvas.drawPath(path, pen);
+        pen.setColor(Color.parseColor("#78DBE2"));
+        canvas.drawCircle(getWidth() / 4 + 20, 1300, 80, pen);
+        pen.setColor(Color.parseColor("#9F8170"));
+        canvas.drawRect(getWidth() / 4 + 50, 1950, getWidth() / 2 - 50, 1600, pen);
+        pen.setColor(Color.parseColor("#3D2B1F"));
+        canvas.drawLine(getWidth() / 4 + 20, 1380, getWidth() / 4 + 20, 1220, pen);
+        canvas.drawLine(getWidth() / 4 - 60, 1300, getWidth() / 4 + 100, 1300, pen);
+        canvas.drawCircle(getWidth() / 2 - 90, 1800, 10, pen);
+        pen.setColor(Color.YELLOW);
+        canvas.drawRect(60, 1600, getWidth() / 4, 1800, pen);
+        pen.setColor(Color.parseColor("#3D2B1F"));
+        canvas.drawLine(60, 1700, getWidth() / 4, 1700, pen);
+        canvas.drawLine((getWidth() / 4 - 110), 1600, (getWidth() / 4 - 110), 1800, pen);
     }
 }
